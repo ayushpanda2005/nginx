@@ -1,0 +1,24 @@
+(base) PS C:\Users\AYUSH> docker run -it -p 8080:80 ubuntu
+root@7a8de52bb203:/# apt-get update
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+root@7a8de52bb203:/# nginx -v
+nginx version: nginx/1.24.0 (Ubuntu)
+root@7a8de52bb203:/# nginx
+root@7a8de52bb203:/# ls etc/nginx/
+root@7a8de52bb203:/etc/nginx# ls -lh
+root@7a8de52bb203:/etc/nginx# apt-get install vim
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# mv nginx.conf nginx-backup.conf
+root@7a8de52bb203:/etc/nginx# ls
+conf.d          koi-utf     modules-available  proxy_params     sites-enabled  win-utf
+fastcgi.conf    koi-win     modules-enabled    scgi_params      snippets
+fastcgi_params  mime.types  nginx-backup.conf  sites-available  uwsgi_params
+root@7a8de52bb203:/etc/nginx# touch nginx.conf
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# nginx -s reload
+2025/12/18 08:49:38 [emerg] 677#677: unknown directive "server_name_" in /etc/nginx/nginx.conf:9
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# nginx -s reload
+2025/12/18 08:50:37 [notice] 680#680: signal process started
