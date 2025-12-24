@@ -1,0 +1,31 @@
+root@7a8de52bb203:/etc/nginx/website# cat index.html
+<html>
+        <head>
+                <title> Ayush Panda </title>
+        </head>
+
+        <body>
+               <h1> Hello from nginx </h1>
+               <p> This is sample nginx webpage </p?
+        </body>
+</html>
+root@7a8de52bb203:/etc/nginx/website# vim nginx.html
+root@7a8de52bb203:/etc/nginx/website# vim nginx.conf
+root@7a8de52bb203:/etc/nginx/website# ls
+index.html  nginx.conf  nginx.html
+root@7a8de52bb203:/etc/nginx/website# rm nginx.conf
+root@7a8de52bb203:/etc/nginx/website# rm nginx.html
+root@7a8de52bb203:/etc/nginx/website# ls
+index.html
+root@7a8de52bb203:/etc/nginx/website# cd ..
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# nginx -s reload
+2025/12/18 09:07:29 [notice] 697#697: signal process started
+root@7a8de52bb203:/etc/nginx# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# nginx -s reload
+2025/12/18 09:08:37 [notice] 702#702: signal process started
+root@7a8de52bb203:/etc/nginx# vim nginx.conf
+root@7a8de52bb203:/etc/nginx# nginx -s reload
